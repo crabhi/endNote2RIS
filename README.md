@@ -13,5 +13,6 @@ Then run:
 
 ## Shortcomings
 
-The path to PDF files is hardcoded. It points to the PDF directory of EndNote. It would be better
-to extract it as a parameter. Please submit a patch if you do. Thanks. :-)
+- The path to PDF files is hardcoded. It points to the PDF directory of EndNote. It would be better to extract it as a parameter. Please submit a patch if you do. Thanks. :-)
+- The URL doesn't get imported by RefMan.
+- The file location doesn't get imported by RefMan.
