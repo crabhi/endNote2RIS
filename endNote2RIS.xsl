@@ -22,7 +22,7 @@
     <xsl:template match="record">
         <xsl:call-template name="tagged">
             <xsl:with-param name="tag">TY</xsl:with-param>
-            <xsl:with-param name="context">ABSTR</xsl:with-param>
+            <xsl:with-param name="context">JOUR</xsl:with-param>
         </xsl:call-template>
 
         <xsl:apply-templates select="*"/>
@@ -63,6 +63,9 @@
         <xsl:call-template name="tagged">
             <xsl:with-param name="tag">JO</xsl:with-param>
         </xsl:call-template>
+        <xsl:call-template name="tagged">
+            <xsl:with-param name="tag">JA</xsl:with-param>
+        </xsl:call-template>
     </xsl:template>
 
     <xsl:template match="year">
@@ -75,9 +78,7 @@
         <xsl:call-template name="tagged">
             <xsl:with-param name="tag">UR</xsl:with-param>
             <xsl:with-param name="context">
-                <xsl:text>&#21;</xsl:text>
                 <xsl:value-of select="text()"/>
-                <xsl:text>&#23;</xsl:text>
             </xsl:with-param>
         </xsl:call-template>
     </xsl:template>
