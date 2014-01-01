@@ -10,7 +10,7 @@ Install saxon (XSLT 2.0 processor). On Ubuntu:
 
 Then run:
 
-    saxon-xslt My\ Collection.xml endNote2RIS.xsl > exported.ris
+    saxon-xslt My\ Collection.xml endNote2RIS.xsl | iconv -f UTF-8 -t CP852//TRANSLIT > exported.ris
 
 ## Shortcomings
 
