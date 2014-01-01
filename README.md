@@ -9,6 +9,7 @@ Install saxon (XSLT 2.0 processor). On Ubuntu:
     sudo apt-get install libsaxon-java
 
 Then run:
+
     saxon-xslt My\ Collection.xml endNote2RIS.xsl > exported.ris
 
 ## Shortcomings
